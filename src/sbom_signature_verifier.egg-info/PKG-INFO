@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: sbom-signature-verifier
+Version: 0.1.0
+Summary: Verify SBOM integrity and signatures
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click>=8.0.0
+Requires-Dist: cryptography>=41.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Dynamic: license-file
+
+# SBOM Signature Verifier
+
+Verify SBOM integrity and signatures
+
+## Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Usage
+
+```bash
+pip install sbom-signature-verifier
+python -m src.cli
+```
+
+## Testing
+
+```bash
+pytest tests/ -v
+```
+
+## Security
+
+- Uses synthetic/test data only
+- No real credentials or production systems
+
+## License
+
+MIT

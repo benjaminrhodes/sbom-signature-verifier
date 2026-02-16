@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/cli.py
+src/sbom_signature_verifier.egg-info/PKG-INFO
+src/sbom_signature_verifier.egg-info/SOURCES.txt
+src/sbom_signature_verifier.egg-info/dependency_links.txt
+src/sbom_signature_verifier.egg-info/entry_points.txt
+src/sbom_signature_verifier.egg-info/requires.txt
+src/sbom_signature_verifier.egg-info/top_level.txt
+tests/test_main.py

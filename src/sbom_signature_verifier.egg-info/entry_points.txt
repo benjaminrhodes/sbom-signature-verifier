@@ -1,0 +1,2 @@
+[console_scripts]
+sbom-verify = src.cli:main

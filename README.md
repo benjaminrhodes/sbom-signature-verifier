@@ -1,24 +1,38 @@
 # SBOM Signature Verifier
 
-Verify SBOM integrity and signatures
+Verify SBOM integrity and signatures for SPDX and CycloneDX formats.
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Parse SPDX (tag-value) and CycloneDX (JSON) SBOM formats
+- Verify package integrity via SHA256/SHA512 checksums
+- Verify cryptographic signatures
+- CLI interface for easy integration
+
+## Installation
+
+```bash
+pip install sbom-signature-verifier
+```
 
 ## Usage
 
 ```bash
-pip install sbom-signature-verifier
-python -m src.cli
+# Parse and display SBOM
+python -m src.cli parse sample.spdx.txt
+
+# Verify integrity
+python -m src.cli verify sample.spdx.txt --directory /path/to/packages
+
+# Verify with signature
+python -m src.cli verify sample.spdx.txt --key public_key.pem
 ```
 
 ## Testing
 
 ```bash
 pytest tests/ -v
+pytest tests/ --cov=src --cov-report=term-missing
 ```
 
 ## Security
